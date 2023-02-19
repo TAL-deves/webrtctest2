@@ -38,29 +38,29 @@ function answer() {
     document.getElementById("answer").style.display = "none";
 }
 
-let pcConfig = {
-    "iceServers":
-        [
-            { "url": "stun:180.210.129.103:3478" },
-            {
-                "url": "turn:180.210.129.103:3478?transport=udp",
-                "username": "citlrtc",
-                "credential": "c1tlr7c",
-            }
-        ]
-};
-
 // let pcConfig = {
 //     "iceServers":
 //         [
-//             { "url": "stun:34.143.165.178:3478" },
+//             { "url": "stun:180.210.129.103:3478" },
 //             {
-//                 "url": "turn:34.143.165.178:3478?transport=udp",
-//                 "username": "test",
-//                 "credential": "test123",
+//                 "url": "turn:180.210.129.103:3478?transport=udp",
+//                 "username": "citlrtc",
+//                 "credential": "c1tlr7c",
 //             }
 //         ]
 // };
+
+let pcConfig = {
+    "iceServers":
+        [
+            { "url": "stun:34.143.165.178:3478" },
+            {
+                "url": "turn:34.143.165.178:3478?transport=udp",
+                "username": "test",
+                "credential": "test123",
+            }
+        ]
+};
 
 // let pcConfig = {
 //     "iceServers":
